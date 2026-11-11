@@ -28,7 +28,7 @@ if (toggle && links) {
 const floor = document.getElementById('floor');
 if (floor) {
   const u = window.innerWidth < 860 ? 34 : 46;          // Breite einer Diele in px
-  const woods = ['#8a5a32', '#9a6639', '#7b4e2a', '#a8723f', '#93603a', '#80542f'];
+  const woods = ['#4a3c30', '#544436', '#43372c', '#5a4a3b', '#4f4033', '#3e3329'];
   const range = 16;
   const frag = document.createDocumentFragment();
   // Fischgrät-Muster: Pro Strang wechseln sich liegende und stehende Dielen ab
