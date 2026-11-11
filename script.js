@@ -54,3 +54,19 @@ if (form) {
       '&body=' + encodeURIComponent(text);
   });
 }
+
+// Galerie: Bild groß anzeigen
+const lb = document.getElementById('lightbox');
+if (lb && typeof lb.showModal === 'function') {
+  const lbImg = lb.querySelector('img');
+  document.querySelectorAll('.shot-btn').forEach((b) => {
+    b.addEventListener('click', () => {
+      const img = b.querySelector('img');
+      lbImg.src = b.dataset.src;
+      lbImg.alt = img.alt;
+      lb.showModal();
+    });
+  });
+  lb.querySelector('.lb-close').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
+}

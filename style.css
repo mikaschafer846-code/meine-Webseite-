@@ -222,6 +222,29 @@ h2 {
 .service p { margin: 0; color: var(--muted); transition: color .35s; }
 .service:hover p { color: #2a2a2a; }
 
+/* Galerie */
+.gallery-section { border-top: 1px solid var(--line); }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.shot { margin: 0; aspect-ratio: 4 / 5; position: relative; overflow: hidden; border-radius: 4px; background: var(--panel); }
+.shot-btn { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.shot img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.8,.2,1), filter .4s; filter: saturate(.9); }
+.shot:hover img { transform: scale(1.04); filter: saturate(1); }
+.shot figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; pointer-events: none;
+  padding: 48px 18px 16px;
+  background: linear-gradient(transparent, rgb(0 0 0 / .78));
+}
+.shot figcaption strong { display: block; font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 1.4rem; letter-spacing: .02em; line-height: 1.1; }
+.shot figcaption span { color: var(--accent); font-size: .9rem; font-weight: 600; }
+
+.lightbox { border: 0; padding: 0; background: transparent; max-width: 94vw; max-height: 92vh; overflow: visible; }
+.lightbox::backdrop { background: rgb(0 0 0 / .88); }
+.lightbox img { display: block; max-width: 94vw; max-height: 92vh; width: auto; height: auto; border-radius: 4px; }
+.lb-close {
+  position: fixed; top: 16px; right: 16px; width: 44px; height: 44px; border-radius: 50%;
+  border: 0; background: var(--accent); color: var(--black); font-size: 1.1rem; font-weight: 800; cursor: pointer;
+}
+
 /* Über uns */
 .about { padding: 130px 0; border-top: 1px solid var(--line); }
 .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 72px; align-items: start; }
@@ -391,4 +414,12 @@ address { font-style: normal; font-size: 1.1rem; line-height: 1.7; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition-duration: .01ms !important; }
   .marquee-track { animation: none; }
+}
+
+/* Galerie auf dem Handy */
+@media (max-width: 860px) {
+  .gallery { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .shot figcaption { padding: 32px 10px 10px; }
+  .shot figcaption strong { font-size: 1rem; overflow-wrap: anywhere; hyphens: auto; }
+  .shot figcaption span { font-size: .75rem; line-height: 1.3; display: block; }
 }
