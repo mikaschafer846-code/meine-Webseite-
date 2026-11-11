@@ -50,7 +50,7 @@ if (form) {
       (d.get('ort') ? 'Ort: ' + d.get('ort') + '\n' : '') +
       '\nViele Grüße\n' + d.get('name');
     window.location.href =
-      'mailto:msmontagen@gmail.com?subject=' + encodeURIComponent(betreff) +
+      'mailto:ms.montage.kassel@gmail.com?subject=' + encodeURIComponent(betreff) +
       '&body=' + encodeURIComponent(text);
   });
 }
