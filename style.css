@@ -281,8 +281,14 @@ h2 {
 .contact { background: var(--sand); color: var(--black); padding: 130px 0; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .contact h2 { font-size: clamp(3rem, 7vw, 5.5rem); }
+.phone-big {
+  display: block; margin: 32px 0 8px;
+  font-family: var(--display); font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1;
+  text-decoration: none; letter-spacing: .02em;
+}
+.phone-big:hover { color: var(--accent-dark); }
 .mail-big {
-  display: inline-block; margin: 32px 0 28px;
+  display: inline-block; margin: 8px 0 28px;
   font-weight: 800; font-size: clamp(1.25rem, 3vw, 2rem);
   text-decoration: none; border-bottom: 4px solid var(--black);
   word-break: break-all;
@@ -325,6 +331,19 @@ address { font-style: normal; font-size: 1.1rem; line-height: 1.7; }
 .footer-inner nav { display: flex; gap: 20px; }
 .footer-inner a { text-decoration: none; }
 .footer-inner nav a:hover { color: var(--accent); }
+
+/* Schwebender Anruf-Knopf (nur Handy) */
+.call-fab {
+  display: none;
+  position: fixed; right: 16px; bottom: 16px; z-index: 60;
+  align-items: center; gap: 8px;
+  padding: 14px 20px; border-radius: 999px;
+  background: var(--accent); color: var(--black);
+  font-weight: 800; text-decoration: none; text-transform: uppercase; letter-spacing: .04em; font-size: .95rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / .45);
+}
+.call-fab svg { width: 20px; height: 20px; }
+@media (max-width: 860px) { .call-fab { display: inline-flex; } }
 
 /* Scroll-Animationen */
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s, transform .8s cubic-bezier(.2,.8,.2,1); }
