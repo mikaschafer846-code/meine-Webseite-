@@ -3,147 +3,192 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Musterbetrieb – Ihr Handwerker vor Ort</title>
-  <meta name="description" content="Musterbetrieb: Qualität aus Meisterhand. Zuverlässiges Handwerk in Musterstadt und Umgebung.">
+  <title>MS Montagen – Böden, Türen, Wände | Wattenbach</title>
+  <meta name="description" content="MS Montagen aus Wattenbach: Bodenverlegung, Unterkonstruktion, Zimmertüren, Sockelleisten, Wände streichen und Tapezieren – Innenausbau aus einer Hand.">
+  <meta name="theme-color" content="#111111">
+  <link rel="preload" href="fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="#start" class="logo">🔨 Musterbetrieb</a>
-      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+      <a href="#start" class="logo" aria-label="MS Montagen – zum Seitenanfang">
+        <span class="logo-mark">MS</span>
+        <span class="logo-text">Montagen</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
       <nav class="nav-links" id="nav-links">
         <a href="#leistungen">Leistungen</a>
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#referenzen">Referenzen</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt" class="nav-cta">Anfrage stellen</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section id="start" class="hero">
-      <div class="container">
-        <p class="eyebrow">Meisterbetrieb seit 1990 · Musterstadt</p>
-        <h1>Qualität aus Meisterhand.</h1>
-        <p class="lead">Ob Reparatur, Renovierung oder Neubau – wir erledigen Ihr Projekt sauber, pünktlich und zum fairen Preis.</p>
+      <div class="floor" aria-hidden="true"><div class="floor-inner" id="floor"></div></div>
+      <div class="container hero-content">
+        <p class="tag">Innenausbau · Wattenbach &amp; Umgebung</p>
+        <h1 class="hero-title">
+          <span class="line">Böden.</span>
+          <span class="line">Türen.</span>
+          <span class="line hl">Wände.</span>
+        </h1>
+        <p class="hero-lead">
+          <strong>MS Montagen</strong> verlegt, montiert und gestaltet –
+          sauber, pünktlich und alles aus einer Hand.
+        </p>
         <div class="actions">
-          <a href="#kontakt" class="btn btn-primary">Kostenloses Angebot anfragen</a>
-          <a href="tel:+49123456789" class="btn btn-ghost">📞 0123 456789</a>
+          <a href="#kontakt" class="btn btn-yellow">Projekt anfragen <span aria-hidden="true">→</span></a>
+          <a href="#leistungen" class="btn btn-line">Leistungen ansehen</a>
         </div>
-        <ul class="trust">
-          <li>✔ Meisterbetrieb</li>
-          <li>✔ Festpreis-Angebote</li>
-          <li>✔ Termintreue</li>
-        </ul>
       </div>
+      <a href="#leistungen" class="scroll-hint" aria-label="Weiter nach unten">↓</a>
     </section>
 
-    <section id="leistungen" class="section alt">
+    <!-- LAUFBAND -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Bodenverlegung</span><i>✦</i><span>Unterkonstruktion</span><i>✦</i><span>Zimmertüren</span><i>✦</i><span>Sockelleisten</span><i>✦</i><span>Wände streichen</span><i>✦</i><span>Tapezieren</span><i>✦</i>
+        <span>Bodenverlegung</span><i>✦</i><span>Unterkonstruktion</span><i>✦</i><span>Zimmertüren</span><i>✦</i><span>Sockelleisten</span><i>✦</i><span>Wände streichen</span><i>✦</i><span>Tapezieren</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- LEISTUNGEN -->
+    <section id="leistungen" class="section">
       <div class="container">
-        <h2>Unsere Leistungen</h2>
-        <div class="grid">
-          <article class="card">
-            <div class="icon">🏠</div>
-            <h3>Renovierung</h3>
-            <p>Modernisierung von Wohnräumen, Bädern und Küchen – alles aus einer Hand.</p>
-          </article>
-          <article class="card">
-            <div class="icon">🔧</div>
-            <h3>Reparatur &amp; Wartung</h3>
-            <p>Schnelle Hilfe bei Schäden und regelmäßige Wartung für langlebige Ergebnisse.</p>
-          </article>
-          <article class="card">
-            <div class="icon">📐</div>
-            <h3>Neubau &amp; Ausbau</h3>
-            <p>Von der Planung bis zur Fertigstellung begleiten wir Ihr Bauvorhaben.</p>
-          </article>
-          <article class="card">
-            <div class="icon">💬</div>
-            <h3>Beratung</h3>
-            <p>Ehrliche Beratung vor Ort und ein transparentes, verbindliches Angebot.</p>
-          </article>
+        <div class="section-head reveal">
+          <p class="kicker">Leistungen</p>
+          <h2>Was wir <span class="hl-text">anpacken</span></h2>
         </div>
+
+        <ol class="services">
+          <li class="service reveal">
+            <span class="num">01</span>
+            <h3>Bodenverlegung</h3>
+            <p>Ob Laminat, Vinyl oder Parkett – fachgerecht verlegt, fugenfrei und auf den Millimeter genau.</p>
+          </li>
+          <li class="service reveal">
+            <span class="num">02</span>
+            <h3>Unterkonstruktion</h3>
+            <p>Der Unterbau entscheidet: eben, stabil und tragfähig – die Basis für jeden guten Boden.</p>
+          </li>
+          <li class="service reveal">
+            <span class="num">03</span>
+            <h3>Zimmertüren</h3>
+            <p>Einbau von Innentüren samt Zarge – passgenau montiert, sauber eingestellt, leise im Lauf.</p>
+          </li>
+          <li class="service reveal">
+            <span class="num">04</span>
+            <h3>Sockelleisten</h3>
+            <p>Der saubere Abschluss zwischen Boden und Wand – perfekt angepasst, auch in jeder Ecke.</p>
+          </li>
+          <li class="service reveal">
+            <span class="num">05</span>
+            <h3>Wände streichen</h3>
+            <p>Frische Farbe mit klaren Kanten. Wir decken ab, streichen und hinterlassen alles sauber.</p>
+          </li>
+          <li class="service reveal">
+            <span class="num">06</span>
+            <h3>Tapezieren</h3>
+            <p>Raufaser, Vlies oder Muster – glatt an der Wand, ohne Blasen, Stoß auf Stoß.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section id="ueber-uns" class="section">
-      <div class="container two-col">
-        <div class="avatar" aria-hidden="true">🛠️</div>
-        <div>
-          <h2>Über uns</h2>
-          <p>Der Musterbetrieb ist ein familiengeführter Handwerksbetrieb aus Musterstadt. Mit einem eingespielten Team aus Gesellen und Meistern sind wir für Privat- und Geschäftskunden in der Region im Einsatz.</p>
-          <p>Wir legen Wert auf saubere Arbeit, klare Absprachen und hochwertige Materialien – damit Sie lange Freude an unserer Arbeit haben.</p>
-          <div class="stats">
-            <div><strong>30+</strong><span>Jahre Erfahrung</span></div>
-            <div><strong>1.500+</strong><span>Projekte</span></div>
-            <div><strong>8</strong><span>Mitarbeiter</span></div>
+    <!-- STATEMENT -->
+    <section class="statement">
+      <div class="container">
+        <p class="big-quote reveal">
+          Vom <span class="outline">Unterbau</span><br>
+          bis zur letzten <span class="hl-text">Leiste.</span>
+        </p>
+        <p class="statement-sub reveal">Ein Ansprechpartner für Ihren kompletten Innenausbau – kein Koordinieren, kein Hin und Her.</p>
+      </div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section id="ablauf" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Ablauf</p>
+          <h2>So einfach <span class="hl-text">geht’s</span></h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Anfrage</h3>
+            <p>Sie schreiben uns kurz, was gemacht werden soll.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">2</span>
+            <h3>Besichtigung</h3>
+            <p>Wir schauen uns alles vor Ort an und messen auf.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">3</span>
+            <h3>Angebot</h3>
+            <p>Sie erhalten ein klares, verständliches Angebot.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">4</span>
+            <h3>Umsetzung</h3>
+            <p>Wir legen los – und hinterlassen alles besenrein.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="referenzen" class="section alt">
-      <div class="container">
-        <h2>Referenzen</h2>
-        <div class="grid">
-          <article class="card project">
-            <div class="thumb"></div>
-            <h3>Badsanierung, Musterstadt</h3>
-            <p>Komplette Erneuerung eines Altbau-Badezimmers in drei Wochen.</p>
-          </article>
-          <article class="card project">
-            <div class="thumb"></div>
-            <h3>Dachausbau, Beispieldorf</h3>
-            <p>Ausbau eines Dachbodens zu einem hellen Wohn- und Arbeitsraum.</p>
-          </article>
-          <article class="card project">
-            <div class="thumb"></div>
-            <h3>Ladenumbau, Innenstadt</h3>
-            <p>Umbau einer Verkaufsfläche – im laufenden Betrieb und im Zeitplan.</p>
-          </article>
+    <!-- KONTAKT -->
+    <section id="kontakt" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="kicker dark">Kontakt</p>
+          <h2>Bereit für<br>neue Räume?</h2>
+          <a class="mail-big" href="mailto:msmontagen@gmail.com">msmontagen@gmail.com</a>
+          <address>
+            <strong>MS Montagen</strong><br>
+            Gartenstraße 25<br>
+            34320 Wattenbach
+          </address>
         </div>
 
-        <h3 class="sub">Das sagen unsere Kunden</h3>
-        <div class="grid">
-          <blockquote class="card quote">„Pünktlich, sauber und freundlich. Gerne wieder!“<cite>– Familie M.</cite></blockquote>
-          <blockquote class="card quote">„Das Angebot war fair und wurde genau eingehalten.“<cite>– Herr K.</cite></blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="section">
-      <div class="container contact">
-        <div>
-          <h2>Kontakt</h2>
-          <p>Rufen Sie uns an oder schreiben Sie uns – wir melden uns innerhalb von 24 Stunden.</p>
-          <ul class="contact-list">
-            <li>📍 Musterstraße 1, 12345 Musterstadt</li>
-            <li>📞 <a href="tel:+49123456789">0123 456789</a></li>
-            <li>✉️ <a href="mailto:info@musterbetrieb.de">info@musterbetrieb.de</a></li>
-            <li>🕗 Mo–Fr 7:00–17:00 Uhr</li>
-          </ul>
-        </div>
-        <form class="contact-form" id="contact-form">
-          <label>Name
-            <input type="text" name="name" required>
+        <form class="contact-form reveal" id="contact-form">
+          <fieldset class="chips">
+            <legend>Worum geht’s?</legend>
+            <label><input type="checkbox" name="leistung" value="Bodenverlegung"><span>Boden</span></label>
+            <label><input type="checkbox" name="leistung" value="Unterkonstruktion"><span>Unterkonstruktion</span></label>
+            <label><input type="checkbox" name="leistung" value="Zimmertüren"><span>Zimmertüren</span></label>
+            <label><input type="checkbox" name="leistung" value="Sockelleisten"><span>Sockelleisten</span></label>
+            <label><input type="checkbox" name="leistung" value="Wände streichen"><span>Streichen</span></label>
+            <label><input type="checkbox" name="leistung" value="Tapezieren"><span>Tapezieren</span></label>
+          </fieldset>
+          <label class="field">Ihr Name
+            <input type="text" name="name" autocomplete="name" required>
           </label>
-          <label>Telefon oder E-Mail
-            <input type="text" name="kontakt" required>
+          <label class="field">Ort
+            <input type="text" name="ort" autocomplete="address-level2">
           </label>
-          <label>Ihr Anliegen
-            <textarea name="nachricht" rows="5" required></textarea>
+          <label class="field">Ihre Nachricht
+            <textarea name="nachricht" rows="4" placeholder="z. B. 40 m² Vinyl im Wohnzimmer, inkl. Sockelleisten" required></textarea>
           </label>
-          <button type="submit" class="btn btn-primary">Anfrage senden</button>
-          <p class="form-status" id="form-status" role="status"></p>
+          <button type="submit" class="btn btn-black">Anfrage per E-Mail senden <span aria-hidden="true">→</span></button>
+          <p class="form-note">Öffnet Ihr E-Mail-Programm mit der fertigen Nachricht.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Musterbetrieb · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    <div class="container footer-inner">
+      <span class="logo small"><span class="logo-mark">MS</span><span class="logo-text">Montagen</span></span>
+      <span>© <span id="year"></span> MS Montagen · Wattenbach</span>
+      <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
     </div>
   </footer>
 

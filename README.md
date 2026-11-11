@@ -1,11 +1,12 @@
 # meine-Webseite-
-Handwerk Webseite
+Handwerk Webseite – **MS Montagen**, Wattenbach
 
-Statische Webseite (HTML/CSS/JS, ohne Build-Schritt) für einen Handwerksbetrieb.
+Statische Webseite (HTML/CSS/JS, ohne Build-Schritt).
 
-- `index.html` – Startseite mit Leistungen, Über uns, Referenzen, Kontakt
-- `style.css` – Design (inkl. Dark Mode und Mobilansicht)
-- `script.js` – Mobiles Menü, Kontaktformular (Demo)
-- `impressum.html`, `datenschutz.html` – Platzhalter für Pflichtangaben
+- `index.html` – Startseite: Hero mit animiertem Fischgrät-Parkett, Leistungen, Ablauf, Kontakt
+- `style.css` – Design (Schwarz/Gelb, mobil optimiert)
+- `script.js` – Menü, Parkett-Animation, Scroll-Effekte, Kontaktformular (öffnet E-Mail-Programm)
+- `fonts/` – lokal eingebundene Schriften (Anton, Inter; SIL Open Font License)
+- `impressum.html`, `datenschutz.html` – noch zu vervollständigen (gelb markierte Stellen)
 
-Ansehen: `index.html` im Browser öffnen. Alle Texte mit „Muster…“ sind Platzhalter.
+Ansehen: `index.html` im Browser öffnen.
