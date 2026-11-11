@@ -24,35 +24,6 @@ if (toggle && links) {
   });
 }
 
-// Fischgrät-Parkett im Hero, das sich Diele für Diele selbst verlegt
-const floor = document.getElementById('floor');
-if (floor) {
-  const u = window.innerWidth < 860 ? 34 : 46;          // Breite einer Diele in px
-  const woods = ['#4a3c30', '#544436', '#43372c', '#5a4a3b', '#4f4033', '#3e3329'];
-  const range = 16;
-  const frag = document.createDocumentFragment();
-  // Fischgrät-Muster: Pro Strang wechseln sich liegende und stehende Dielen ab
-  for (let s = -6; s <= 6; s++) {
-    for (let k = -range; k <= range; k++) {
-      const y = k + 4 * s;
-      for (const [x, yy, w, h] of [[k, y, 2, 1], [k, y + 1, 1, 2]]) {
-        const p = document.createElement('div');
-        p.className = 'plank';
-        p.style.left = x * u + 'px';
-        p.style.top = yy * u + 'px';
-        p.style.width = w * u - 2 + 'px';
-        p.style.height = h * u - 2 + 'px';
-        p.style.background = woods[Math.floor(Math.random() * woods.length)];
-        // Verlegereihenfolge: von links nach rechts über die Fläche
-        const order = (k + range) * 0.6 + (s + 6) * 0.9 + Math.random() * 2;
-        p.style.animationDelay = (0.3 + order * 0.045).toFixed(2) + 's';
-        frag.appendChild(p);
-      }
-    }
-  }
-  floor.appendChild(frag);
-}
-
 // Elemente beim Scrollen einblenden
 const io = new IntersectionObserver((entries) => {
   entries.forEach((en) => {
