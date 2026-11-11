@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ms-montagen-kassel.de/sitemap.xml
