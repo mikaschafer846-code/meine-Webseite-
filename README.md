@@ -11,3 +11,9 @@ Statische Webseite (HTML/CSS/JS, ohne Build-Schritt).
 - `impressum.html`, `datenschutz.html` – noch zu vervollständigen (gelb markierte Stellen)
 
 Ansehen: `index.html` im Browser öffnen.
+
+## Einzeldatei für den Upload
+
+`python3 tools/einzeldatei.py . dist/index.html` erzeugt eine einzige `index.html`,
+in der CSS, JavaScript, Schriften, Bilder, Impressum und Datenschutz eingebettet sind.
+Diese Datei allein reicht für den Webspace (z. B. IONOS, Ordner `/public`).
